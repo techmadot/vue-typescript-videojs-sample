@@ -1,40 +1,24 @@
 # vue-typescript-videojs-sample
 
-This template should help get you started developing with Vue 3 in Vite.
+Vue.js3 + TypeScript + video.js を組み合わせたサンプルです。
+UIフレームワークにはVue3 系列でも使用できる Vuetify を使用しています。
 
-## Recommended IDE Setup
+## 動作イメージ
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+![](images/vue3-movie-player-example.png)
 
-## Type Support for `.vue` Imports in TS
+## 使用しているライブラリなど
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+- [Vue.js 3.2](https://ja.vuejs.org/)
+- [Video.js](https://videojs.com/)
+- [Vuetify](https://vuetifyjs.com/ja/)
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+## 紹介している機能
 
-1. Disable the built-in TypeScript Extension
-    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+- 指定された URL / ファイルへの切り替えの例
+- 指定された秒数へのジャンプ(シーク)の例
+- 再生時間・総時間の表示の例
 
-## Customize configuration
+### 課題
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
-```
+再生時間・総時間の表示について、scoped css での実現ができていない点。
